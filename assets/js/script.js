@@ -20,7 +20,7 @@ function displayTodo(){
         `<li class="listItem">
                 <span>${taskList[i].todo}</span>
                 <span>${taskList[i].date}</span>
-                <span>abcd</span>
+                <span class="del" onclick="taskList.splice(${i}, 1); displayList();">&#x1f5d1;</span>
         </li>`
     }
 
